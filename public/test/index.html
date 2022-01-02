@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <style>
+      body {
+        width: 1100px;
+        margin: 4rem auto;
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="A"></div>
+    <div id="B"></div>
+    <div id="C"></div>
+
+    <link rel="stylesheet" href="bundle.css" />
+    <script src="/bundle.js"></script>
+    <script>
+      app(document.querySelector('#A'), {
+        src: 'https://images.unsplash.com/photo-1641115948629-6ff88111fbeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+        title: 'One Won',
+        content:
+          'When you hear people demanding that the Ten Commandments be displayed in courtrooms and schoolrooms, always be sure to ask which set. It works every time.',
+      })
+      app(document.querySelector('#B'), {
+        src: 'https://images.unsplash.com/photo-1641081526673-bbadf060f59e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        title: 'One Juan',
+        content:
+          "Well, we can't say any more than we can say there is no god, there is no afterlife. We can only say there is no persuasive evidence for or argument for it.",
+      })
+      app(document.querySelector('#C'), {
+        src: 'https://images.unsplash.com/photo-1641004594288-9d87c13c8462?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=824&q=80',
+        title: 'Juan Won',
+        content:
+          'On every side of religion, there is conclusive evidence that it causes people to be more mean, more selfish, and perhaps above all, more stupid.',
+      })
+    </script>
+  </body>
+</html>
